@@ -7,13 +7,29 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="UserService" />
+        <module name="aiservice" />
+        <module name="u_service" />
+        <module name="configserver" />
+        <module name="Activity_Service" />
+        <module name="eureka" />
+        <module name="gateway" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ApiGateway" target="21" />
+      <module name="UserService" target="23" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Activity_Service" options="-parameters" />
+      <module name="ApiGateway" options="-parameters" />
       <module name="UserService" options="-parameters" />
+      <module name="aiservice" options="-parameters" />
+      <module name="configserver" options="-parameters" />
+      <module name="eureka" options="-parameters" />
+      <module name="gateway" options="-parameters" />
+      <module name="u_service" options="-parameters" />
     </option>
   </component>
 </project>

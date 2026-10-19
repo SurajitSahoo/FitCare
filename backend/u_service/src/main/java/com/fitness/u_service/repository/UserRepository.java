@@ -6,4 +6,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 public interface UserRepository extends JpaRepository<User,String> {
     Boolean existsByEmail(String email); //check if any record is present in this email or not
 
+    Boolean existsByKeycloakId(String userId);
+    User findByEmail(String email);
 }

@@ -1,6 +1,5 @@
 package com.fitness.u_service.dto;
 
-import com.fitness.u_service.models.UserRole;
 import lombok.Data;
 
 import java.time.LocalDateTime;
@@ -9,6 +8,7 @@ import java.time.LocalDateTime;
 
 public class UserResponse {
     private String id;
+    private String keycloakId;
     private String email;
     private String password;
     private String firstName;
